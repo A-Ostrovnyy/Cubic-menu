@@ -1,0 +1,36 @@
+.img-wrapper
+	width: 100%
+	height: 100vh
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	position: relative
+	z-index: 0
+	float: left
+	overflow: hidden
+
+.img-wrapper::after
+	content: ''
+	display: block
+	width: 100vw
+	height: 100%
+	padding-bottom: 100%
+	position: absolute
+	z-index: 1
+	background-color: rgba(0,0,0,.6)
+
+.out
+	overflow: hidden
+	position: relative
+	color: #fff
+	text-transform: uppercase
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200
+
+@import partials/info
+@import partials/hamburger
+@import partials/menu
