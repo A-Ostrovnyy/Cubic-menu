@@ -10,7 +10,7 @@
 	height: 100%
 	padding: 30px
 	padding-top: 150px
-	background-color: rgba(111, 112, 119, .7)
+	background-color: rgba($grey, .7)
 	font-weight: 700
 
 .navigation--isActive
@@ -28,12 +28,12 @@
 	font-size: 50px
 
 .navigation__item:hover
-	color: #00f6ff
+	color: $accent
 	will-change: color
 	transition: color .3s ease-in
 
 .navigation__item:active, .navigation__item--isActive
-	color: #000
+	color: $black
 
 .close
 	display: block
@@ -51,9 +51,9 @@
 	border: 5px solid transparent
 
 .close:hover
-	border-color: rgba(#00f6ff, .3)
+	border-color: rgba($accent, .3)
 	will-change: border-color
 	transition: border-color .3s ease-in
 
 .close:active
-	background-color: #000
+	background-color: $black
