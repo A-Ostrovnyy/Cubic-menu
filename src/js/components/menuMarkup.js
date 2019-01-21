@@ -2,8 +2,8 @@ import data from './data'
 
 let listItem = '';
 
-data.forEach((item, i) => {
-  listItem += `<li class="navigation__item" data-order="${i}">${item.name}</li>
+data.forEach(item => {
+  listItem += `<li class="navigation__item">${item.name}</li>
   `;
 });
 
