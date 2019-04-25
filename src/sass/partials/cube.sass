@@ -1,0 +1,71 @@
+.cube
+	position: relative
+	transform-style: preserve-3d
+	margin: 0
+	padding: 0
+
+.cube--isFliped
+	transform: translateX(-320px)
+	will-change: transform
+	transition: transform .3s ease-in
+
+	.cube__front
+		transform: rotateY(-80deg)
+		will-change: transform
+		transition: transform .3s ease-in
+
+	.cube__right
+		transform: rotateY(-180deg)
+		will-change: transform
+		transition: transform .3s ease-in
+
+	.hamburger-wrapper
+		opacity: 0
+		will-change: opacity
+		transition: opacity .3s ease-in
+
+.cube--isNotFliped
+	transform: translateX(0px)
+	will-change: transform
+	transition: transform .3s ease-in
+
+	.cube__rfont
+		transform: rotateY(0deg)
+		will-change: transform
+		transition: transform .3s ease-in
+
+	.cube__right
+		transform: rotateY(-100deg)
+		will-change: transform
+		transition: transform .3s ease-in
+
+.cube__side
+	box-sizing: border-box
+	position: absolute
+	margin: 0
+	padding: 0
+
+.cube__front
+	width: 100vw
+	height: 100vh
+	min-width: 100%
+	min-height: 100%
+	transform: rotateY(-0deg)
+	transform-origin: right center
+	will-change: transform
+	transition: transform .3s ease-in
+
+.cube__right
+	width: 100vw
+	height: 100vh
+	min-width: 100%
+	min-height: 100%
+	min-height: 100%
+	padding: 0
+	transform: rotateY(-100deg) translateY(50%)
+	will-change: transform
+	transition: transform .3s ease-in
+	transform-origin: right center
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
