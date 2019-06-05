@@ -19,4 +19,4 @@ function setData(object) {
 `;
 }
 
-export default setData
+export default setData;

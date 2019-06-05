@@ -1,22 +1,31 @@
-import data from './data'
-
-let listItem = '';
-
-data.forEach(item => {
-  listItem += `<li class="navigation__item">${item.name}</li>
-  `;
-});
+import data from './data';
 
 const navigation = document.createElement('div');
-navigation.className = `navigation-wrapper navigation--isHidden`;
-navigation.innerHTML = `
-  <nav class="navigation">
-    <ul>
-      ${listItem}
-    </ul>
-  </nav>
-  <div class="hamburger-wrapper" id="hamburger"></div>
-  <div class="close" id="close"></div>
-`;
+navigation.classList.add('navigation-wrapper', 'navigation--isHidden');
 
-export default navigation
+const navigationBlock = document.createElement('nav');
+navigationBlock.classList.add('navigation');
+
+const menuList = document.createElement('ul');
+
+const hamburgerWrapper = document.createElement('div');
+hamburgerWrapper.classList.add('hamburger-wrapper');
+hamburgerWrapper.id = 'hamburger';
+
+const closeButton = document.createElement('div');
+closeButton.classList.add('close');
+closeButton.id = 'close';
+
+data.forEach(item => {
+  let menuListItem = document.createElement('li');
+  menuListItem.classList.add('navigation__item');
+  menuListItem.innerHTML = item.name;
+  menuList.appendChild(menuListItem);
+});
+
+navigation.appendChild(navigationBlock);
+navigationBlock.appendChild(menuList);
+navigation.appendChild(hamburgerWrapper);
+navigation.appendChild(closeButton);
+
+export default navigation;
