@@ -8,6 +8,7 @@
 *.swp
 *.zip
 *.vi
+*.map
 *~
 
 # OS or Editor folders
@@ -30,4 +31,3 @@ nbproject
 _tmp
 node_modules
 bower_components
-build
