@@ -8,10 +8,6 @@ navigationBlock.classList.add('navigation');
 
 const menuList = document.createElement('ul');
 
-const hamburgerWrapper = document.createElement('div');
-hamburgerWrapper.classList.add('hamburger-wrapper');
-hamburgerWrapper.id = 'hamburger';
-
 const closeButton = document.createElement('div');
 closeButton.classList.add('close');
 closeButton.id = 'close';
@@ -25,7 +21,6 @@ data.forEach(item => {
 
 navigation.appendChild(navigationBlock);
 navigationBlock.appendChild(menuList);
-navigation.appendChild(hamburgerWrapper);
 navigation.appendChild(closeButton);
 
 export default navigation;

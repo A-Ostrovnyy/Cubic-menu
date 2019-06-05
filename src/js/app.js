@@ -5,8 +5,13 @@ import handleMenu from './components/handleMenu';
 
 const root = document.getElementById('root');
 
+const hamburgerWrapper = document.createElement('div');
+hamburgerWrapper.classList.add('hamburger-wrapper');
+hamburgerWrapper.id = 'hamburger';
+
 root.innerHTML = setData(data[0]);
 root.appendChild(navigation);
+root.appendChild(hamburgerWrapper);
 
 const navigationItem = document.querySelectorAll('.navigation__item');
 navigationItem[0].classList.add('navigation__item--isActive');
