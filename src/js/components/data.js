@@ -4,7 +4,7 @@ const data = [
     quantity: 'seven summits',
     location: 'oceania',
     height: 4.884,
-    img: '/img/puncak_jaya.jpeg'
+    img: '/img/puncak_jaya.jpg'
   },
   {
     name: 'vinson',
@@ -39,7 +39,7 @@ const data = [
     quantity: 'seven summits',
     location: 'south america',
     height: 6.962,
-    img: '/img/aconcagua.JPG'
+    img: '/img/aconcagua.jpg'
   },
   {
     name: 'everest',
@@ -50,4 +50,4 @@ const data = [
   },
 ];
 
-export default data
+export default data;

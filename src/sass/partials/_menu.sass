@@ -8,19 +8,17 @@
 .navigation
 	width: 100%
 	height: 100%
-	padding: 30px
-	padding-top: 150px
+	padding: 150px 20px 30px
 	background-color: rgba($grey, .7)
 	font-weight: 700
 
 .navigation--isActive
-	display: block
-	transform: translateX(0px)
-	transition: transform .3s ease-in
+	transform: translateX(0px) rotateY(0deg)
+	transition: transform .5s ease-in
 
 .navigation--isHidden
-	transform: translateX(400px)
-	transition: transform .3s ease-in
+	transform: translateX(400px) rotateY(100deg)
+	transition: transform .5s ease-in
 
 .navigation__item
 	color: inherit

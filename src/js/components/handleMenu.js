@@ -7,4 +7,4 @@ function handleMenu() {
   navigationWrapper.classList.toggle('navigation--isActive');
 }
 
-export default handleMenu
+export default handleMenu;
