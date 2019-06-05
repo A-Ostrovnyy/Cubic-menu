@@ -13,7 +13,7 @@ closeButton.classList.add('close');
 closeButton.id = 'close';
 
 data.forEach(item => {
-  let menuListItem = document.createElement('li');
+  const menuListItem = document.createElement('li');
   menuListItem.classList.add('navigation__item');
   menuListItem.innerHTML = item.name;
   menuList.appendChild(menuListItem);
