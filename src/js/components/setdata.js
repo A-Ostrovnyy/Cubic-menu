@@ -1,6 +1,6 @@
 function setData(object) {
   return  `
-  <div class="img-wrapper" style="background-image: url(${object.img});">
+  <div class="img-wrapper" style="background-image: url(./img/content/${object.img});">
     <div class="info info-wrapper">
       <div class="info__title">
         <p class="info__name">
