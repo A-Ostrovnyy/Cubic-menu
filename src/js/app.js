@@ -25,7 +25,8 @@ root.addEventListener('click', ({target}) => {
       item.classList.remove('navigation__item--isActive');
     });
     target.classList.add('navigation__item--isActive');
-  } else if (target && target.matches('div.hamburger-wrapper') || target.matches('div.close')) {
+    root.appendChild(hamburgerWrapper);
+  } else if (target && target.matches('div.hamburger-wrapper') || target.matches('div#close')) {
     handleMenu();
   }
 });
